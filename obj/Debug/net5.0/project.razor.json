@@ -15639,6 +15639,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\zwein\\epicodus\\c#\\PierresTreats\\Views\\Treats\\AddFlavor.cshtml",
+      "TargetPath": "Views\\Treats\\AddFlavor.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\zwein\\epicodus\\c#\\PierresTreats\\Views\\Treats\\Details.cshtml",
       "TargetPath": "Views\\Treats\\Details.cshtml",
       "FileKind": "mvc"
