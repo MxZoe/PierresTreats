@@ -52,3 +52,4 @@ C:\Users\zwein\epicodus\c#\PierresTreats\obj\Debug\net5.0\refint\PierresTreats.d
 C:\Users\zwein\epicodus\c#\PierresTreats\obj\Debug\net5.0\PierresTreats.pdb
 C:\Users\zwein\epicodus\c#\PierresTreats\obj\Debug\net5.0\PierresTreats.genruntimeconfig.cache
 C:\Users\zwein\epicodus\c#\PierresTreats\obj\Debug\net5.0\ref\PierresTreats.dll
+C:\Users\zwein\epicodus\c#\PierresTreats\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

@@ -15664,6 +15664,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\zwein\\epicodus\\c#\\PierresTreats\\Views\\Account\\Index.cshtml",
+      "TargetPath": "Views\\Account\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\zwein\\epicodus\\c#\\PierresTreats\\Views\\Account\\Register.cshtml",
+      "TargetPath": "Views\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\zwein\\epicodus\\c#\\PierresTreats\\Views\\Treats\\Index.cshtml",
       "TargetPath": "Views\\Treats\\Index.cshtml",
       "FileKind": "mvc"
