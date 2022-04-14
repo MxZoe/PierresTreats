@@ -11,7 +11,7 @@ namespace PierresTreats.Controllers
   {
     private readonly PierresTreatsContext _db;
 
-    public TreatssController(PierresTreatsContext db)
+    public TreatsController(PierresTreatsContext db)
     {
       _db = db;
     }
@@ -34,7 +34,7 @@ namespace PierresTreats.Controllers
       _db.SaveChanges();
       if (FlavorId != 0)
       {
-        _db.TreatFlavor.Add(new TreatFlavor() { FlavorId = FlavorId, TreatId = treat.TreatId });
+        _db.TreatFlavors.Add(new TreatFlavor() { FlavorId = FlavorId, TreatId = treat.TreatId });
         _db.SaveChanges();
       }
       return RedirectToAction("Index");
@@ -61,7 +61,7 @@ namespace PierresTreats.Controllers
     {
       if (FlavorId != 0)
       {
-        _db.TreatFlavor.Add(new TreatFlavor() { FlavorId = FlavorId, TreatId = treat.TreatId });
+        _db.TreatFlavors.Add(new TreatFlavor() { FlavorId = FlavorId, TreatId = treat.TreatId });
       }
       _db.Entry(treat).State = EntityState.Modified;
       _db.SaveChanges();
@@ -80,7 +80,7 @@ namespace PierresTreats.Controllers
     {
       if (FlavorId != 0)
       {
-        _db.TreatFlavor.Add(new TreatFlavor() { FlavorId = FlavorId, TreatId = treat.TreatId });
+        _db.TreatFlavors.Add(new TreatFlavor() { FlavorId = FlavorId, TreatId = treat.TreatId });
         _db.SaveChanges();
       }
       return RedirectToAction("Index");
@@ -104,8 +104,8 @@ namespace PierresTreats.Controllers
     [HttpPost]
     public ActionResult DeleteFlavor(int joinId)
     {
-      var joinEntry = _db.TreatFlavor.FirstOrDefault(entry => entry.TreatFlavorId == joinId);
-      _db.TreatFlavor.Remove(joinEntry);
+      var joinEntry = _db.TreatFlavors.FirstOrDefault(entry => entry.TreatFlavorId == joinId);
+      _db.TreatFlavors.Remove(joinEntry);
       _db.SaveChanges();
       return RedirectToAction("Index");
     }

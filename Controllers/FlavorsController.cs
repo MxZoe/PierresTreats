@@ -11,7 +11,7 @@ namespace PierresTreats.Controllers
   {
     private readonly PierresTreatsContext _db;
 
-    public EngineersController(PierresTreatsContext db)
+    public FlavorsController(PierresTreatsContext db)
     {
       _db = db;
     }
@@ -31,7 +31,7 @@ namespace PierresTreats.Controllers
     [HttpPost]
     public ActionResult Create(Flavor flavor)
     {
-      _db.Flavors.Add(Flavor);
+      _db.Flavors.Add(flavor);
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
@@ -48,7 +48,7 @@ namespace PierresTreats.Controllers
     {
       var thisFlavor = _db.Flavors.FirstOrDefault(flavor => flavor.FlavorId == id);
       ViewBag.TreatId = new SelectList(_db.Treats, "TreatId", "Name");
-      return View(thisEngineer);
+      return View(thisFlavor);
     }
 
     [HttpPost]
@@ -56,7 +56,7 @@ namespace PierresTreats.Controllers
     {
       if (TreatId != 0)
       {
-        _db.TreatFlavor.Add(new TreatFlavor() { TreatId = TreatId, FlavorId = flavor.FlavorId });
+        _db.TreatFlavors.Add(new TreatFlavor() { TreatId = TreatId, FlavorId = flavor.FlavorId });
       }
       _db.Entry(flavor).State = EntityState.Modified;
       _db.SaveChanges();
@@ -74,7 +74,7 @@ namespace PierresTreats.Controllers
     {
       if (TreatId != 0)
       {
-        _db.TreatFlavor.Add(new TreatFlavor() { TreatId = TreatId, FlavorId = flavor.FlavorId });
+        _db.TreatFlavors.Add(new TreatFlavor() { TreatId = TreatId, FlavorId = flavor.FlavorId });
         _db.SaveChanges();
       }
       return RedirectToAction("Index");
@@ -83,7 +83,7 @@ namespace PierresTreats.Controllers
     public ActionResult Delete(int id)
     {
       var thisFlavor = _db.Flavors.FirstOrDefault(flavor => flavor.FlavorId == id);
-      return View(thisEngineer);
+      return View(thisFlavor);
     }
 
     [HttpPost, ActionName("Delete")]
