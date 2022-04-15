@@ -19,7 +19,7 @@ This application lets an authorized user add flavors and treats. This program us
 ## Setup/Installation Requirements
 
 * Go to https://github.com/MxZoe/PierresTreats to clone or download the project. 
-* You must then create a file named appsettings.json and add it to your .gitignore file
+* To add the sql server you must create a file named appsettings.json and add it to your .gitignore file
 * The appsettings.json file should then have the following:
 {
     "ConnectionStrings": {
