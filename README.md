@@ -27,7 +27,6 @@ This application lets an authorized user add flavors and treats. This program us
     }
 }
 ## Known Bugs
-  Need to add the Treat views and user authorization
 
 ## License
 

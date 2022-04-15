@@ -15649,6 +15649,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\zwein\\epicodus\\c#\\PierresTreats\\Views\\Account\\Login.cshtml",
+      "TargetPath": "Views\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\zwein\\epicodus\\c#\\PierresTreats\\Views\\Treats\\Edit.cshtml",
       "TargetPath": "Views\\Treats\\Edit.cshtml",
       "FileKind": "mvc"
