@@ -26,6 +26,7 @@ This application lets an authorized user add flavors and treats. This program us
         "DefaultConnection": "Server=localhost;Port=3306;database=zoe_weinstein;uid=root;pwd=[YOUR-PASSWORD-HERE];"
     }
 }
+* Next, in the terminal run the command "dotnet ef migrations add initial" followed by the command "dotnet ef database update" to get the database connected and updated. You should run these commands whenever you update the models. Simply substitute the "initial" in the dotnet ef migrations command with an appropriate descriptor.
 ## Known Bugs
 
 ## License
